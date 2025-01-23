@@ -1,0 +1,30 @@
+# ProxyGlobal by FelixTPG
+# This is the main configuration file for ProxyGlobal
+# ProxyGlobal is designed to transfer a message sent by a player to all other proxy servers in the network.
+
+updateNotify: true
+
+configuration:
+  # Configures the message that is sent to all servers in the network when a player sends a message
+  # Available placeholders: {player}, {message}, {server}
+  player-message:
+    enabled: true
+    message: "&8[&9{server}l&8] &r{player} &8» &7{message}"
+
+  # Configures the message sent when a player switches servers
+  # Available placeholders: {player}, {from}, {to}
+  server-switch:
+    enabled: true
+    message: "&e{player}&7 has switched from server &b{from} &7to server &b{to}."
+
+  # Configures the message sent when a player joins the network
+  # Available placeholders: {player}, {server}
+  network-join:
+    enabled: true
+    message: "&8[&2»&8] &a{player}&7 has joined the network on server &a{server}&7!"
+
+  # Configures the message sent when a player leaves the network
+    # Available placeholders: {player}
+  network-leave:
+    enabled: true
+    message: "&8[&4«&9] &c{player}&7 has left the network."

@@ -1,0 +1,9 @@
+name: ProxyGlobal
+version: '1.0'
+main: dev.xilef.proxyGlobal.Main
+authors:
+  - FelixTPG
+  - FrinshHD
+
+permissions:
+  - proxy.updateNotify
